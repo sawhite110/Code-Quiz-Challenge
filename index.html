@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Quiz Challenge</title>
+  <meta charset = "UTF-8" />
+  <meta name = "viewport" content="width=device-width, initial-scale=1" />
+  <link rel = "stylesheet" type="text/css" href = "./assets/css/style.css" />
+</head>
+
+<body>
+  <header>    
+    <div id = "scores"></div>
+    <div class = "timer-text"></div>
+    <div class = "timer-count"></div>
+  </header>
+
+  <main>
+    <section id = "intro" style="display: block">
+      <div class ="medium-font">Code Quiz Challenge!</div>
+      <p>Try to answer the following coding questions within the time limit allowed.</p>
+      <p> Keep in mind the incorrect answers will penalize your score/time by 10 seconds!</p>
+      <button class = "start-button">Start Quiz</button>
+    </section>
+
+    <section id = "questions1" style="display: none">
+      <div class = "question-container">
+       <h2 id = "question1">What is 2 + 2?</h2>
+        <div id="buttons">
+          <button id = "a">4</button>
+          <br>
+          <button id = "b">3</button>
+          <br>
+          <button id = "c">7</button>
+          <br>
+          <button id = "d">0</button>
+        </div>
+      </div>
+    </section>
+
+    <section id = "questions2" style="display: none">
+      <div class = "question-container">
+       <h2 id = "question2">What is today?</h2>
+        <div id="buttons">
+          <button id = "a">Monday</button>
+          <br>
+          <button id = "b">Tuesday</button>
+          <br>
+          <button id = "c">Saturday</button>
+          <br>
+          <button id = "d">Friday</button>
+        </div>
+      </div>
+    </section>
+
+    <section id = "questions3" style="display: none">
+      <div class = "question-container">
+       <h2 id = "question3">What color is an apple?</h2>
+        <div id="buttons">
+          <button id = "a">purple</button>
+          <br>
+          <button id = "b">red</button>
+          <br>
+          <button id = "c">black</button>
+          <br>
+          <button id = "d">orange</button>
+        </div>
+      </div>
+    </section>
+
+    <section id = "questions4" style="display: none">
+      <div class = "question-container">
+       <h2 id = "question4">How many toes do you have on one foot?</h2>
+        <div id="buttons">
+          <button id = "a">6</button>
+          <br>
+          <button id = "b">2</button>
+          <br>
+          <button id = "c">4</button>
+          <br>
+          <button id = "d">5</button>
+        </div>
+      </div>
+    </section>
+
+    <section id = "high-scores" style="display: none">
+      <div class = "high-score">
+        <div id="view-high-scores">
+          <button id = "a">View High Score</button>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
