@@ -1,98 +1,71 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Code Quiz Challenge</title>
   <meta charset = "UTF-8" />
   <meta name = "viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel = "stylesheet" type="text/css" href = "./assets/css/style.css" />
 </head>
-
 <body>
-  <header>    
-    <div id = "scores"></div>
+  <header> 
+    <a href="#highScores.style.display = block">   
+    <div id = "scores">View Highscores</div>
+    </a>
     <div class = "timer-text"></div>
-    <div class = "timer-count"></div>
+    <div class = "timer-count" id="timer-count">Time: 75</div>
   </header>
-
   <main>
-    <section id = "intro" style="display: block">
+     <section id = "intro" style="display: block">
       <div class ="medium-font">Code Quiz Challenge!</div>
       <p>Try to answer the following coding questions within the time limit allowed.</p>
       <p> Keep in mind the incorrect answers will penalize your score/time by 10 seconds!</p>
       <button class = "start-button">Start Quiz</button>
     </section>
-
+    <!--We just need one generic question field which we will update dynamically-->
     <section id = "questions1" style="display: none">
       <div class = "question-container">
-       <h2 id = "question1">What is 2 + 2?</h2>
+       <h2 id = "questions"></h2>
         <div id="buttons">
-          <button id = "a">4</button>
+          <button id = "a"></button>
           <br>
-          <button id = "b">3</button>
+          <button id = "b"></button>
           <br>
-          <button id = "c">7</button>
+          <button id = "c"></button>
           <br>
-          <button id = "d">0</button>
+          <button id = "d"></button>
         </div>
       </div>
     </section>
-
-    <section id = "questions2" style="display: none">
-      <div class = "question-container">
-       <h2 id = "question2">What is today?</h2>
-        <div id="buttons">
-          <button id = "a">Monday</button>
-          <br>
-          <button id = "b">Tuesday</button>
-          <br>
-          <button id = "c">Saturday</button>
-          <br>
-          <button id = "d">Friday</button>
+    <!-- This section will house the high scores page  -->
+    <section id = "done" style="display: none">
+      <div class="col-auto">
+        <div id="message">
+        <h2 id="message">All done!</h2>
         </div>
+        <div id="finalScore">Your final score is: </div>
+        <div id="message3">Enter Initials Here: </div>
+        <label class="visually-hidden" for="autoSizingInput">Name</label>
+        <input type="text" class="form-control" id="initials" placeholder="Initials Here...">
+      </div>
+      <div class="col-auto">
+        <button type="button" class="btn btn-primary" id="submit">Submit</button>
       </div>
     </section>
-
-    <section id = "questions3" style="display: none">
-      <div class = "question-container">
-       <h2 id = "question3">What color is an apple?</h2>
-        <div id="buttons">
-          <button id = "a">purple</button>
-          <br>
-          <button id = "b">red</button>
-          <br>
-          <button id = "c">black</button>
-          <br>
-          <button id = "d">orange</button>
+    <!-- This section will house the high scores page  -->
+    <section id = "highScores" style="display: none">
+      <div class = "high-score">  
+        <h2>High Scores</h2>
+        <div id = "view-high-scores">
+          <ol id="highScoreList"></ol>
+          <button id = "clear">Clear High Score</button>
         </div>
-      </div>
-    </section>
-
-    <section id = "questions4" style="display: none">
-      <div class = "question-container">
-       <h2 id = "question4">How many toes do you have on one foot?</h2>
-        <div id="buttons">
-          <button id = "a">6</button>
-          <br>
-          <button id = "b">2</button>
-          <br>
-          <button id = "c">4</button>
-          <br>
-          <button id = "d">5</button>
-        </div>
-      </div>
-    </section>
-
-    <section id = "high-scores" style="display: none">
-      <div class = "high-score">
-        <div id="view-high-scores">
-          <button id = "a">View High Score</button>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" value="back" class="btn btn-primary" id="back" onClick="history.go(-7);">Go Back</button>
       </div>
     </section>
   </main>
   <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
-
 </html>
