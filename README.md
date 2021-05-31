@@ -2,7 +2,7 @@
 
 ---
 
-## Overview
+*  The purpose of this repository is to create a DOM application that allows the user to answer a series of questions, be able to enter in their initials, and receive their score at the end.
 
 * This app will be a timed coding quiz with multiple-choice questions.
 
@@ -16,6 +16,16 @@
 
 * This is the first page that will render in the browser.
 
+![“screenshot1”](./assets/images/screenshot1.png)
 
+* This is an example of the question page.
 
-* This is an example of 
+![“screenshot2”](./assets/images/screenshot2.png)
+
+* This is an example of the High Scores page, with a list of users and their score.
+
+![“screenshot3”](./assets/images/screenshot3.png)
+
+---
+
+* Gitub Repo Link: [Github.com](https://github.com/sawhite110/Code-Quiz-Challenge)
